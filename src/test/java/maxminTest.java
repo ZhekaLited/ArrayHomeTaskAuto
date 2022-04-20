@@ -14,7 +14,15 @@ class maxminTest {
 
         int max = maxmin.findMax(numbers);
 
-        assertThat(max).isEqualTo(14);
+        assertThat(max).isEqualTo(77);
+    }
+    @Test
+    public void findmin()  {
+        List<Integer> numbers = Arrays.asList(25, 14, 56, 15, 36, 56, 77, 18, 29, 49);
+
+        int min = maxmin.findMax(numbers);
+
+        assertThat(min).isEqualTo(14);
     }
 //Write a Java program to find the maximum and minimum value of an array. Exercise 10
 }

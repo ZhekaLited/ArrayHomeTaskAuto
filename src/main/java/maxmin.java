@@ -32,6 +32,7 @@ public class maxmin {
         System.out.println(" Original Array: " + Arrays.asList(my_array));
         System.out.println(" Maximum value for the above array = " + max);
         System.out.println(" Minimum value for the above array = " + min);
-        return min;
+        return max;
+        //return min
     }
 }
