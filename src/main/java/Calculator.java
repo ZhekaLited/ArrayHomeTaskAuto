@@ -1,30 +1,23 @@
-package WorkHomeTestAuto;
-
-import java.util.Arrays;
 
 public class Calculator {
     public static void main(String[] args) {
+        int result = MyMethod();
+        System.out.println("Average value of the array elements is : " + result);
+    }
 
+    public static int MyMethod() {
         int[] numbers = new int[]{20, 30, 25, 35, -16, 60, -100};
         //calculate sum of all array elements
         int sum = 0;
         for (int i = 0; i < numbers.length; i++)
             sum = sum + numbers[i];
         //calculate average value
-        double average = sum / numbers.length;
-        System.out.println("Average value of the array elements is : " + average);
+        int average = sum / numbers.length;
+        return average;
     }
 
     public static int add(int[] numbers1) {
-        int[] numbers = new int[]{20, 30, 25, 35, -16, 60, -100};
-        //calculate sum of all array elements
-        int sum = 0;
-        for (int i = 0; i < numbers.length; i++)
-            sum = sum + numbers[i];
-        //calculate average value
-        double average = sum / numbers.length;
-        System.out.println("Average value of the array elements is : " + average);
-        return numbers.length;
+        return MyMethod();
     }
 }
 
